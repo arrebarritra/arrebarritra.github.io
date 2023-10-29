@@ -1,29 +1,91 @@
 <div class="user-details">
   <h1> Featured Projects </h1>
 </div>
+
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <img alt="bun-squishy" src="{{ "/assets/img/bun_squishy.gif" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
+    <h3>Soft Body Simulation on GPU</h3>
+    <p>
+      This was my final project for my course in Graphics and Interaction, and what really sparked my interest in GPU/graphics programming.
+      It is a particle based soft body simulation based on <a href="https://matthias-research.github.io/pages/publications/XPBD.pdf">Müller's XPBD</a> method, 
+      simulating the system by solving a set of volume and length constraints in every time step.
+      One of the most interesting parts of the project was optimising it for parallelisation on the GPU,
+      which involved clustering the particles using graph colouring.
+      Check out the <a href="https://arrebarritra.github.io/soft-body-project">blog</a> if you're interested in the details!
+      Here are some of the skills and technologies I learnt about in this project:
+    </p>
     <ul>
-      <li> Featured Skills</li>
+      <li>Unity</li>
+      <li>GLSL Compute shaders</li>
+      <li>XPBD</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/soft-body-project">Check it out</a>
   </div>
 </div>
+
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+    <img alt="volume-renderer" src="{{ "/assets/img/volume-renderer.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3>Volume renderer</h3>
+    <p>
+      This is a personal project I made after learning about volume rendering in my Visualisation course.
+      It is a slice based volume renderer.
+      One of the challenges in making this was the geometrical calculations involved in order to generate view aligned polygons and optimise the renderer.
+      Work is still in progress!
+    </p>
     <ul>
-      <li> Featured Skills</li>
+      <li>OpenGL</li>
+      <li>Geometry</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/volume-renderer">Check it out</a>
+  </div>
+</div>
+
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="arrend" src="{{ "/assets/img/arrend.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3>arrend</h3>
+    <p>
+      Arrend is a long term OpenGL renderer project I have been working on.
+      I started it in the summer as I started learning OpenGL.
+      The project is quite large in scope and work is still in progress.
+      Some current features:
+    </p>
+    <ul>
+      <li>Deferred shading, normal mapping, SSAO, SSR</li>
+      <li>Model loading with multiple textures</li>
+      <li>GUI editor</li>
+    </ul>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/arrend">Check it out</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="Lab" src="{{ "/assets/img/lab.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3>Rolling Reactions</h3>
+    <p>
+      Rolling Reactions is a group project I'm part of in my course in Advanced Graphics and Interaction.
+      It is a VR experience where you traverse in a wheelchair while overseeing experiments in the lab.
+      I worked on creating the wheelchair locomotion system, which involves marrying both the physics and interaction of the wheelchair to deliver a realistic and immersive experience.
+      I have also made some contributions to the fluid simulation that is used for the experiments.
+      Here is what I've learnt during the project:
+    </p>
+    <ul>
+      <li>VR</li>
+      <li>Unity Physics</li>
+      <li>Zibra Effects - liquid & smoke and fire simulation</li>
+    </ul>
+    <a class="project-link" target="_blank" href="https://github.com/Rolling-Reactions/rolling-reactions">Check it out</a>
   </div>
 </div>
