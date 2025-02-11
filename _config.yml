@@ -7,12 +7,7 @@ url: "https://arrebarritra.github.io" # the base hostname & protocol for your si
 # User settings
 user_firstname: Aritra
 username: Aritra Bhakat
-user_university: KTH
-user_degree: Computer Science
-user_track: Visualisation and Interactive Graphics
-user_aim: I'm currently looking for a  master's thesis project!
-user_description: Graphics programming is one of my big passions. I love anything to do with graphics, rendering and GPU programming. As a former Engineering Physics student, I'm particularly interested in the intersection of GPU/graphics and physics. That includes for instance light transport, GPU simulation and rendering techniques. I am also fascinated by the creative approaches and methods one has to take in optimising algorithms for parallel execution on the GPU.
-email: aritra@kth.se
+email: arre2barre@gmail.com
 github_username:  arrebarritra
 linkedin_username:  aritra-bhakat
 

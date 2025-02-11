@@ -1,5 +1,54 @@
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1> My Projects </h1>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="vulkan-raytracer" src="{{ "/assets/img/dragon.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3>Vulkan raytracer: a physically based path tracer utilising hardware ray tracing</h3>
+    <p>
+      In order to learn the Vulkan API as well as get a deeper understanding of light transport theory I implemented a path tracer in Vulkan.
+      It takes advantage of raytracing hardware by using Vulkan raytracing extensions.
+      It uses the Cook-Torrance BSDF model with physically based constituent functions.
+      Multiple features and algorithms are implemented, including multiple importance sampling with material sampling and direct light sampling, rough reflections and refractions, and volume transmission.
+    </p>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/vulkan-raytracer">GitHub repo</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="opacity-optimisation" src="{{ "/assets/img/opacity-optimised-tornado.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3>Approximate opacity optimisation</h3>
+    <p>
+      My master's thesis project was on approximate opacity optimisation,
+      which is a rendering technique that helps reveal important features in dense 3D datasets where there is a lot of occlussion.
+      I compared different approximation with regards to their effect on execution time and their accuracy.
+      The image shows how opacity optimisation reveals and highlights the important data at the vortex of a tornado.
+    </p>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/cpp_volume_rendering/tree/rtisokd">GitHub repo</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="volume-renderer" src="{{ "/assets/img/kd_traversal.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3>Isosurface renderer with spatial acceleration structure</h3>
+    <p>
+      For my advanced graphics course I implemented a isosurface renderer that uses implicit kD-trees to accelerate ray traversal for isosurface rendering
+      (based on <a href="https://www.sci.utah.edu/~wald/Publications/2005/iso/tcgv.pdforiginal">this</a> and <a href="https://ieeexplore.ieee.org/document/5290773">this</a> paper).
+      The implicit kD-tree is a data structure that partitions the volume data and stores minimum and maximum density values.
+      Both the kD-tree construction and rendering is done on the GPU using compute shaders, minimising data transfers.
+      The image shows how regions of the volume can be skipped as the ray traverses deeper levels of the tree.
+    </p>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/cpp_volume_rendering/tree/rtisokd">GitHub repo</a>
+  </div>
 </div>
 
 <div class="user-projects">
@@ -17,12 +66,7 @@
       Check out the <a href="https://arrebarritra.github.io/soft-body-project">blog</a> if you're interested in the details!
       Here are some of the skills and technologies I learnt about in this project:
     </p>
-    <ul>
-      <li>Unity</li>
-      <li>GLSL Compute shaders</li>
-      <li>XPBD</li>
-    </ul>
-    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/soft-body-project">Check it out</a>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/soft-body-project">GitHub repo</a>
   </div>
 </div>
 
@@ -31,18 +75,13 @@
     <img alt="volume-renderer" src="{{ "/assets/img/volume-renderer.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3>Volume renderer</h3>
+    <h3>Slice based volume renderer</h3>
     <p>
       This is a personal project I made after learning about volume rendering in my Visualisation course.
       It is a slice based volume renderer.
-      One of the challenges in making this was the geometrical calculations involved in order to generate view aligned polygons and optimise the renderer.
-      Work is still in progress!
+      One of the challenges in making this was the geometric calculations involved in order to generate view aligned polygons and optimise the renderer.
     </p>
-    <ul>
-      <li>OpenGL</li>
-      <li>Geometry</li>
-    </ul>
-    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/volume-renderer">Check it out</a>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/volume-renderer">GitHub repo</a>
   </div>
 </div>
 
@@ -64,7 +103,7 @@
       <li>Model loading with multiple textures</li>
       <li>GUI editor</li>
     </ul>
-    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/arrend">Check it out</a>
+    <a class="project-link" target="_blank" href="https://github.com/arrebarritra/arrend">GitHub repo</a>
   </div>
 </div>
 
@@ -77,15 +116,8 @@
     <p>
       Rolling Reactions is a group project I'm part of in my course in Advanced Graphics and Interaction.
       It is a VR experience where you traverse in a wheelchair while overseeing experiments in the lab.
-      I worked on creating the wheelchair locomotion system, which involves marrying both the physics and interaction of the wheelchair to deliver a realistic and immersive experience.
-      I have also made some contributions to the fluid simulation that is used for the experiments.
-      Here is what I've learnt during the project:
+      My main contribution was creating a believable wheelchair experience by creating an interaction system and programming the physics of the wheelchair.
     </p>
-    <ul>
-      <li>VR</li>
-      <li>Unity Physics</li>
-      <li>Zibra Effects - liquid & smoke and fire simulation</li>
-    </ul>
-    <a class="project-link" target="_blank" href="https://github.com/Rolling-Reactions/rolling-reactions">Check it out</a>
+    <a class="project-link" target="_blank" href="https://github.com/Rolling-Reactions/rolling-reactions">GitHub repo</a>
   </div>
 </div>
